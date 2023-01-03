@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+<meta name="viewport" content="width=device-width"> 
+        <title>Contacto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    
+ <body>
+
+ <header>
+<div class="caja">
+<h1><img src="imagenes/logo.png"></h1>
+ <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+<main>
+<form>
+	<label for="NomyApe"> Nombre y Apellido</label>	
+<input type="text" id="NomyApe" class="input-padre" required>
+
+<label for="Correo"> Correo Electrónico</label>	
+<input type="email"  id="Correo"  class="input-padre" required placeholder="dominio@correo.com">
+
+<label for="Telefono"> Teléfono</label>	
+<input type="tel"  id="Telefono" class="input-padre" required placeholder="(XX) XXX XX XX" checked>
+
+<label for="mensaje"> Mensaje</label>	
+<textarea cols="70" rows="10" id="m" class="input-padre" required=""> 
+</textarea>
+
+<fieldset>
+<legend> Como le gustaría que le contactemos?</legend>
+<label for="radioem"> <input type="radio" value="Email" name="contacto" id="radioem">Email</label>
+
+
+<label for="radiotel"><input type="radio" value="Teléfono" name="contacto" id="radiotel">Teléfono</label>
+
+
+<label for="radiowhat"><input type="radio" value="Email" name="contacto" id="radiowhat" checked>Whatsapp</label>
+
+</fieldset>
+<fieldset>
+<legend> En que horario le gustaria ser atendido?</legend>
+<select>
+	<option>Mañana</option>
+	<option>Tarde</option>
+	<option>Noche</option>
+</select>
+</fieldset>
+
+<label class="checkbox"><input type="checkbox" checked>Le gustaría recibir novedades de la Barbería Alura?</label>      
+
+<input type="submit" value="Enviar Formulario"  class="enviar">
+
+</form>
+<table>
+	<thead>
+	<tr>
+		<th>Día</th>
+		<th>Horario</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Lunes</td>
+		<td>08h - 20h</td>
+	</tr>
+	<tr>
+		<td>Miércoles</td>
+		<td>08h - 20h</td>
+	</tr>
+	<tr>
+		<td>Viernes</td>
+		<td>08h - 20h</td>
+	</tr>
+	</tbody>
+</table>
+
+</main>
+<footer>
+            <img src="imagenes/logo-blanco.png">
+            <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
+        </footer>
+    </body>
+</html>
